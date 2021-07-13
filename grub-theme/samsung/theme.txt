@@ -1,0 +1,146 @@
+desktop-image: "background.png"
+#title-text: "Boot Options"
+#title-font: "Ubuntu Regular 12"
+#title-color: "#aaaaaa"
+message-font: "Ubuntu Regular 12"
+message-color: "#eeeeee"
+terminal-font: "Unifont Regular 12"
+
+################### LOGO ###################
++ image {
+    top = 375
+    left = 720
+    file = "bgrt.png"
+}
+
+
+
+############### OPTION BOX #################
++ boot_menu {
+  top = 60%
+  left = 25%
+  width = 35%
+  height = 35%	
+
+  item_font = "Ubuntu Regular 12"
+  item_color = "#888888"
+  item_height = 18
+  item_icon_space = 4
+  item_spacing = 1
+
+  selected_item_font = "Ubuntu Regular 12"
+  selected_item_color= "#eeeeee"
+
+#  icon_height = 30
+#  icon_width = 30
+}
+
+
+
+############### LABLE BOX #################
++ label {					# 1/5
+  top = 62%
+  left = 65%
+  align = "left"
+  text = "select"
+  font = "Ubuntu Regular 12"
+  color = "#aaaaaa"
+}
++ label {
+  top = 62%
+  left = 65%
+  width = 10%
+  align = "right"
+  text = "↑↓" 
+  font = "Ubuntu Regular 12"
+  color = "#eeeeee"
+}
++ label {					# 2/5
+  top = 64%
+  left = 65%
+  align = "left"
+  text = "boot"
+  font = "Ubuntu Regular 12"
+  color = "#aaaaaa"
+}
++ label {
+  top = 64%
+  left = 65%
+  width = 10%
+  align = "right"
+  text = "enter"
+  font = "Ubuntu Regular 12"
+  color = "#eeeeee"
+}
+
++ label {					# 3/5
+  top = 66%
+  left = 65%
+  align = "left"
+  text = "edit"
+  font = "Ubuntu Regular 12"
+  color = "#aaaaaa"
+}
++ label {
+  top = 66%
+  left = 65%
+  width = 10%
+  align = "right"
+  text = "e"
+  font = "Ubuntu Regular 12"
+  color = "#eeeeee"
+}
+
++ label {					# 4/5
+  top = 68%
+  left = 65%
+  align = "left"
+  text = "command-line"
+  font = "Ubuntu Regular 12"
+  color = "#aaaaaa"
+}
++ label {
+  top = 68%
+  left = 65%
+  width = 10%
+  align = "right"
+  text = "c"
+  font = "Ubuntu Regular 12"
+  color = "#eeeeee"
+}
+
++ label {					# 5/5
+  top = 70%
+  left = 65%
+  align = "left"
+  text = "back to menu"
+  font = "Ubuntu Regular 12"
+  color = "#aaaaaa"
+}
++ label {
+  top = 70%
+  left = 65%
+  width = 10%
+  align = "right"
+  text = "esc"
+  font = "Ubuntu Regular 12"
+  color = "#eeeeee"
+}
+
+
+
+
+############# PROGRESS BAR ###################
++ progress_bar {
+  id = "__timeout__"
+  top = 58%
+  left = 40%
+  height = 1%
+  width = 20%
+  show_text = true
+  text = "@TIMEOUT_NOTIFICATION_LONG@"
+  font = "Ubuntu Regular 12"
+  text_color = "#eeeeee"
+  bg_color = #222222
+  fg_color = #888888
+}

@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Samsung
+Description=Samsung logo
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/samsung
+ScriptFile=/usr/share/plymouth/themes/samsung/samsung.script
